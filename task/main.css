@@ -1,0 +1,379 @@
+body {
+    margin: 0;
+    font-family: "Source Sans 3", sans-serif;
+}
+
+h1 {
+    margin: 0;
+    text-align: center;
+    font-size: 24px;
+}
+
+p {
+    margin: 0;
+    text-align: center;
+    font-size: 16px;
+}
+
+button {
+    font-family: inherit;
+    display: block;
+    margin: 0 auto;
+    border: solid;
+    border-radius: 0px;
+    border-width: 1px;
+    border-color: black;
+    color: black;
+    background-color: transparent;
+}
+
+.task1 {
+    display: flex;
+    flex-wrap: nowrap;
+    /* margin-top: 200vh; */
+    /* margin-bottom: 200vh; */
+}
+
+.task1__image-div {
+    box-sizing: border-box;
+}
+
+.task1__image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.task1__text {
+    display: flex;
+    
+    background-color: #E3CECE;
+    box-sizing: border-box;
+    align-items: center;
+}
+
+.task1__paragraph-more {
+    position: relative;
+}
+
+.task2 {
+    margin-bottom: 100px;
+}
+
+.task2__title-box {
+    text-align: center;
+}
+
+.task2__title-box--button-view-all {
+    width: auto;
+    border-width: 0px;
+    border-bottom-width: 2px;
+}
+
+.task2__cocktail-grid {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.task2__cocktail {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+.task2__cocktail-crop-container {
+    position: relative;
+}
+
+.task2__cocktail-crop {
+    position: relative;
+    overflow: hidden;
+    border-radius: 50%;
+}
+
+.task2__cocktail-image {
+    display: inline;
+    margin: 0 auto;
+    height: auto;
+    width: 100%;
+}
+
+.task2__cocktail-description {
+    line-height: 100%;
+}
+
+.task2__cocktail-flavor {
+    width: 128px;
+    height: 128px;
+    position: absolute;
+}
+
+.task2__cocktail-flavor-top-left {
+    top: -5%;
+    left: -5%;
+}
+
+.task2__cocktail-flavor-top-right {
+    top: -5%;
+    right: -5%;
+}
+
+.task2__cocktail-flavor-bottom-left {
+    bottom: -5%;
+    left: -5%;
+}
+
+.task2__cocktail-flavor-bottom-right {
+    bottom: -5%;
+    right: -5%;
+}
+
+.task3 {
+    position: relative;
+    width: auto;
+    min-height: 200px;
+    height: auto;
+}
+
+.task3__swiper {
+    width: 100%;
+}
+
+.task3__swiper .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    height: auto;
+}
+
+.task3__swiper .swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.task3__swiper .swiper-button-prev::after {
+    visibility: hidden;
+    width: 0px;
+}
+
+.task3__swiper .swiper-button-next::after {
+    visibility: hidden;
+    width: 0px;
+}
+
+.task4 {
+    margin-top: 300px;
+}
+
+.task4__schema {
+    background-color: #304B4F;
+    color: #96DFF8;
+    margin-left: 16px;
+    margin-right: 16px;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    padding-left: 16px;
+    overflow-x: auto;
+}
+
+.bonus__message {
+    position: relative;
+}
+
+.bonus__message-div {
+    position: relative;
+    display: flex;
+    gap: 8px;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    width: fit-content;
+    height: auto;
+    padding: 4px;
+    padding-left: 6px;
+    padding-right: 6px;
+    border-radius: 6px;
+    opacity: 0%;
+}
+
+.bonus__message-img {
+    width: 32px;
+    height: 32px;
+}
+
+@media (max-width: 1399px) {
+    .task1 {
+        flex-direction: column;
+    }
+
+    .task1__image-div {
+        width: 100%;
+        height: 300px;
+    }
+
+    .task1__text {
+        padding: 16px;
+        padding-top: 60px;
+        padding-bottom: 60px;
+        height: auto;
+    }
+
+    .task1__button-more {
+        width: 110px;
+        height: 48px;
+    }
+
+    .task2__title-box {
+        margin-left: 16px;
+        margin-right: 16px;
+        padding-top: 5px;
+    }
+
+    .task2__title-box--header {
+        font-size: 36px;
+    }
+
+    .task2__title-box--description {
+        font-size: 20px;
+    }
+
+    .task2__title-box--button-view-all {
+        font-size: 18px;
+        margin-top: 12px;
+    }
+
+    .task2__cocktail-grid {
+        flex-direction: column;
+        margin-top: 30px;
+        margin-left: 35px;
+        margin-right: 35px;
+        gap: 64px;
+    }
+
+    .task2__cocktail {
+        width: 304px;
+        height: 388px;
+    }
+
+    .task2__cocktail-crop {
+        width: 304px;
+        height: 304px;
+    }
+
+    .task2__cocktail-description {
+        font-size: 24px;
+    }
+
+    .task3 {
+        margin-left: 16px;
+    }
+
+    .task3__swiper {
+        height: 428px;
+    }
+
+    .task3__swiper .swiper-button-prev {
+        left: 16px;
+    }
+
+    .task3__swiper .swiper-button-next {
+        right: 32px;
+    }
+
+    .task3__swiper .swiper-slide {
+        max-width: 343px;
+    }
+}
+
+@media (min-width: 1399px) {
+    .task1 {
+        flex-direction: row;
+    }
+
+    .task1__image-div {
+        width: 50%;
+        height: 576px;
+    }
+
+    .task1__image {
+        padding-bottom: 100%;
+    }
+    
+    .task1__text  {
+        padding: 100px;
+        width: 50%;
+        height: 576px;
+    }
+
+    .task1__button-more {
+        width: 170px;
+        height: 50px;
+    }
+
+    .task2__title-box--header {
+        font-size: 54px;
+    }
+
+    .task2__title-box--description {
+        font-size: 24px;
+    }
+
+    .task2__title-box--button-view-all {
+        font-size: 20px;
+        margin-top: 20px;
+    }
+
+    .task2__cocktail-grid {
+        flex-direction: row;
+        margin-left: 64px;
+        margin-right: 64px;
+        margin-top: 60px;
+        justify-content: space-between;
+    }
+
+    .task2__cocktail {
+        width: 360px;
+        height: 472px;
+    }
+
+    .task2__cocktail-crop {
+        width: 360px;
+        height: 360px;
+    }
+
+    .task2__cocktail-description {
+        font-size: 32px;
+    }
+
+    .task3 {
+        margin-left: 64px;
+    }
+
+    .task3__swiper {
+        height: 585px;
+    }
+
+    .task3__swiper .swiper-button-prev {
+        left: 32px;
+    }
+
+    .task3__swiper .swiper-button-next {
+        right: 64px;
+    }
+
+    .task3__swiper .swiper-slide {
+        max-width: 468px;
+    }
+}
+
+@keyframes fadeIn {
+    from { opacity: 0%; }
+    to { opacity: 100%; }
+}
+
+@keyframes moveUp {
+    from { top: 40px; }
+    to { top: 0px; }
+}

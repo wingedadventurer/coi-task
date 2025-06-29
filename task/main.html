@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <link rel="stylesheet" href="main.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap">
+        <script src="custom_elements.js"></script>
+
+        <!-- swiper library -->
+        <link rel="stylesheet" href=" https://cdn.jsdelivr.net/npm/swiper@11.2.8/swiper-bundle.min.css ">
+        <script src=" https://cdn.jsdelivr.net/npm/swiper@11.2.8/swiper-bundle.min.js "></script>
+    </head>
+
+    <body>
+        <custom-bonus-message left="1" text="hi there! :D"></custom-bonus-message>
+        <custom-bonus-message left="0" text="... What is this?"></custom-bonus-message>
+        <custom-bonus-message left="1" text="this is the assignment you gave me!"></custom-bonus-message>
+        <custom-bonus-message left="0" text="We never asked you to make a fake conversation between us..."></custom-bonus-message>
+        <custom-bonus-message left="1" text="well you did give me a bonus task and asked to be creative, so this is what i made!"></custom-bonus-message>
+        <custom-bonus-message left="0" text="... Alright, you got us there. But where are the first few tasks?"></custom-bonus-message>
+        <custom-bonus-message left="1" text="they're all on this website if you keep scrolling, i hope that is ok"></custom-bonus-message>
+        <custom-bonus-message left="0" text="You have 5 minutes to impress us. Go."></custom-bonus-message>
+        <custom-bonus-message left="1" text="perfect! so first task was a simple custom element that appears when you scroll to it"></custom-bonus-message>
+        <custom-bonus-message left="1" text="you asked for 200vh margins and i had it working but i removed it so we can get there faster."></custom-bonus-message>
+        <custom-bonus-message left="1" text="it should be below this message:"></custom-bonus-message>
+
+        <custom-task1></custom-task1>
+
+        <custom-bonus-message left="1" text="there we go!"></custom-bonus-message>
+        <custom-bonus-message left="0" text="This is passable. Alright, where is task 2?"></custom-bonus-message>
+        <custom-bonus-message left="1" text="ok, task 2, i was supposed to make cocktails and add some extra decorations to each. i used flex for this"></custom-bonus-message>
+        <custom-bonus-message left="1" text="here we go:"></custom-bonus-message>
+
+        <div class="task2">
+            <div class="task2__title-box">
+                <h1 class="task2__title-box--header">OUR RECIPES</h1>
+                <p1 class="task2__title-box--description">Great on its own or as a mixer, Fun cocktail & mocktail recipes to try.</p1>
+                <button class="task2__title-box--button-view-all">VIEW ALL RECIPES</button>
+            </div>
+            <div class="task2__cocktail-grid">
+                <custom-task2__cocktail image="./images/mock1.jpg" flavor1visible="1" flavor2visible="0" flavor3visible="0" flavor4visible="0" text="SPARKLING TRIPLE CITRUS & MINT COCKTAIL"></custom-task2__cocktail>
+                <custom-task2__cocktail image="./images/mock2.jpg" flavor1visible="0" flavor2visible="1" flavor3visible="1" flavor4visible="0" text="SPARKLING TRIPLE CITRUS & MINT COCKTAIL"></custom-task2__cocktail>
+                <custom-task2__cocktail image="./images/mock3.jpg" flavor1visible="0" flavor2visible="0" flavor3visible="0" flavor4visible="1" text="SPARKLING TRIPLE CITRUS & MINT COCKTAIL"></custom-task2__cocktail>
+            </div>
+        </div>
+
+        <custom-bonus-message left="1" text="i used custom elements for each cocktail, and each of these flavors in corners can be individually toggled"></custom-bonus-message>
+        <custom-bonus-message left="1" text="i'll admit it took me some time to get the positioning right"></custom-bonus-message>
+        <custom-bonus-message left="1" text="if i had more time i'd make flavors move around constantly, and pop out slightly when you mouse over"></custom-bonus-message>
+        <custom-bonus-message left="0" text="It looks alright, but you could have done better."></custom-bonus-message>
+        <custom-bonus-message left="1" text="yeah... alright, onto task 3!"></custom-bonus-message>
+        <custom-bonus-message left="1" text="for this task i had to use a swiper.js library"></custom-bonus-message>
+        <custom-bonus-message left="1" text="i honestly have no idea if i'm doing it the right way, and this took quite a while to make"></custom-bonus-message>
+        <custom-bonus-message left="1" text="custom elements have innerHTML embedded, it feels wrong, i hope you can explain me how to do it the right way"></custom-bonus-message>
+        <custom-bonus-message left="1" text="swiper should be initialized and destroyed with the button, give it a shot:"></custom-bonus-message>
+
+        <button class="task3__button-toggle-slides">Toggle Swiper</button>
+        <br>
+
+        <div class="task3">
+        </div>
+
+        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+        <custom-bonus-message left="0" text="Very nice."></custom-bonus-message>
+        <custom-bonus-message left="1" text="aaaand for task 4 we had to make a Shopify schema, and honestly i have no idea how detailed i'm supposed to write it"></custom-bonus-message>
+        <custom-bonus-message left="1" text="i suppose this is what you use for your websites and you write in this Liquid language"></custom-bonus-message>
+        <custom-bonus-message left="1" text="i wrote some basics, i hope this is enough:"></custom-bonus-message>
+        
+        <script src="main.js"></script>
+        
+        <div class="task4">
+            <h1>Shopify section schema</h1>
+            <pre class="task4__schema">
+{% schema %}
+{
+    "name": "Task 1",
+    "tag": "div",
+    "class": "task1",
+    "limit": 1,
+    "settings": {
+        "image-filename": "person0.jpg",
+        "title": "HANDCRAFTED AND RESPONSIBLY SOURCED",
+        "paragraph": "On the other hand, we denounce with righteous indignation and dislike men who are so beguiled and demoralized by the charms of pleasure of the moment, so blinded by desire, that they cannot foresee the pain and trouble that are bound to ensue; and equal blame belongs to those who fail in their duty through weakness of will, which is the same as saying through shrinking from toil and pain.",
+        "paragraph-toggle": "On the other hand, we denounce with righteous indignation and dislike men who are so beguiled and demoralized by the charms of pleasure of the moment, so blinded by desire, that they cannot foresee the pain and trouble that are bound to ensue; and equal blame belongs to those who fail in their duty through weakness of will, which is the same as saying through shrinking from toil and pain.",
+        "allowToggle": true
+    },
+    "locales": {
+        "en": {
+            "title": "HANDCRAFTED AND RESPONSIBLY SOURCED"
+        },
+        "hr": {
+            "title": "RUČNO IZRAĐENO I ODGOVORNO NABAVLJENO"
+        }
+    }
+}
+{% endschema %}
+            </pre>
+            </p>
+        </div>
+    
+    <custom-bonus-message left="1" text="i understand the basic concept of it, you define modular elements in JSON format, and those can later be modified easily..."></custom-bonus-message>
+    <custom-bonus-message left="0" text="Obviously, but what you wrote here is barely anything."></custom-bonus-message>
+    <custom-bonus-message left="1" text="... yeah, sorry about that. again if i had more time i'd spend it learning how Shopify works."></custom-bonus-message>
+
+    <custom-bonus-message left="1" text="anyways, that's all i have for you. also if i had even more time i'd try make some small game here. maybe a tower defense or asteroids game."></custom-bonus-message>
+    <custom-bonus-message left="1" text="but that would take a lot of time so i went for something simple which also uses what i've learned in this task, hence the chat bubbles."></custom-bonus-message>
+    <custom-bonus-message left="1" text="i hope you like them!"></custom-bonus-message>
+    <custom-bonus-message left="0" text="They are a nice touch to all this."></custom-bonus-message>
+
+    <custom-bonus-message left="1" text="... soooo how well did i do?"></custom-bonus-message>
+    <custom-bonus-message left="0" text="We are mildly impressed. This is an ok work, we'd grade this 6/10."></custom-bonus-message>
+    <custom-bonus-message left="0" text="We now have to check assignments from other participants. We will let you know how well you did compared to others, and invite you for interview in case you passed."></custom-bonus-message>
+    <custom-bonus-message left="1" text="thank you very much! i look forward to hearing from you!"></custom-bonus-message>
+    <custom-bonus-message left="0" text="Goodb-"></custom-bonus-message>
+    <custom-bonus-message left="1" text="oh, quick question..."></custom-bonus-message>
+    <custom-bonus-message left="0" text="... Go ahead."></custom-bonus-message>
+    <custom-bonus-message left="1" text="is your tone always this serious?"></custom-bonus-message>
+    <custom-bonus-message left="0" text="..."></custom-bonus-message>
+    <custom-bonus-message left="0" text="....."></custom-bonus-message>
+    <custom-bonus-message left="0" text="......."></custom-bonus-message>
+    <custom-bonus-message left="0" text="NOPE! We're quite cool here as well! XD"></custom-bonus-message>
+    <custom-bonus-message left="1" text="hell yeah! alright, see you later!"></custom-bonus-message>
+    <custom-bonus-message left="0" text="Bye byeeee!"></custom-bonus-message>
+
+    </body>
+
+</html>
